@@ -1,3 +1,78 @@
-body {
-  background: papayawhip;
+/*********************************
+* General
+*********************************/
+body { 
+  background: wheat;
+}
+* {  
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-grow: 3;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70vh;
+}
+
+header, footer, aside, .wrapper  {
+  flex-grow: 1;
+  margin: .5em;
+}
+header, footer, main, .c, .d, .e  {
+  border: 1px solid rgb(183, 65, 14);
+  box-sizing: border-box;
+}
+
+/*********************************
+* HEADER
+*********************************/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 120ch;
+}
+
+/*********************************
+* MAIN
+*********************************/
+main {
+  width: 90%;
+  flex-grow: 3;
+  margin: .5em;
+}
+
+aside  {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 20vh;
+}
+aside > div {
+  flex-grow: 10;
+  margin: .5em;
+  min-width: 20vh;
+}
+
+/*********************************
+* MOBILE FORMAT
+*********************************/
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header {
+    width: 100%;
+  }
+  .wrapper {
+    min-height:  100vh;
+  }
+  aside, header, footer {
+    min-height:  20vh;
+  }
 }
