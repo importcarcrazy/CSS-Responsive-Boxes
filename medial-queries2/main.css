@@ -61,9 +61,6 @@ aside > div {
   min-width: 20vh;
 }
 
-/*********************************
-* MOBILE FORMAT
-*********************************/
 @media (min-width: 600px) {
   .container {
     flex-direction: row;
